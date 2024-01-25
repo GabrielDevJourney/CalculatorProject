@@ -34,7 +34,27 @@
         let operators;
 
         function operate(operator, numb1, numb2){
+            switch (operator) {
+                case '+' :
+                    
+                    return add(numb1,numb2);
             
+                case '-' :
+
+                    return subtract(numb1,numb2);
+            
+                case '*' :
+
+                    return multiply(numb1,numb2);
+            
+                case '/' :
+
+                    return divide(numb1,numb2);
+            
+                default:
+                    console.error('Invalid Operator');
+                    return undefined //*for now return undefined
+            }
         }
 
     </script>
