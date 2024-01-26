@@ -29,15 +29,40 @@ body {
     height: 347px;
     display: flex;
     border: 1px solid  red;
+    padding: 15px;
+    gap: 15px;
 }
 
 .gird3x5{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     flex-grow: 1;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 
 .gird1x4{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.buttons-50x50{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.buttons-50x85{
+    width: 50px;
+    height: 85px;
+    border-radius: 10px;
+}
+
+.button-special-number0{
+    grid-column: span 2;
+    width: 115px;
+    height: 50px;
+    border-radius: 10px;
 }
