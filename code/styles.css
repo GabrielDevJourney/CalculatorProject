@@ -10,6 +10,7 @@ body {
     height: 100vh;
     background-color: #f0f0f0;
 }
+
 .container{
     width: 275px;
     height: 540px;
@@ -26,8 +27,17 @@ body {
 .buttons-div{
     width: 275px;
     height: 347px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    display: flex;
     border: 1px solid  red;
-    padding: 15px;
+}
+
+.gird3x5{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-grow: 1;
+}
+
+.gird1x4{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
 }
