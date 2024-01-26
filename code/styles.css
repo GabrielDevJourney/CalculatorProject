@@ -16,19 +16,19 @@ body {
     height: 540px;
     border: 1px solid black;
     margin: 10% auto;
+    border-radius: 10px;
+    
 }
 
 .display{
     width: 275px;
     height: 193px;
-    border: 1px solid purple;
 }
 
 .buttons-div{
     width: 275px;
     height: 347px;
     display: flex;
-    border: 1px solid  red;
     padding: 15px;
     gap: 15px;
 }
@@ -64,5 +64,11 @@ body {
     grid-column: span 2;
     width: 115px;
     height: 50px;
+    border-radius: 10px;
+}
+
+.screen{
+    width: 274px;
+    height: 193px;
     border-radius: 10px;
 }
