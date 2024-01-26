@@ -68,9 +68,16 @@ body {
 }
 
 .screen{
-    width: 274px;
+    width: 273px;
     height: 193px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     border: 0;
     outline: 0;
+}
+
+/** IMAGE OF BACKSPACE STYLING */
+.buttons-50x50 img{
+    width: 25px;
+    height: 25px;
+
 }
