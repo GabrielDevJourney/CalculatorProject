@@ -71,4 +71,6 @@ body {
     width: 274px;
     height: 193px;
     border-radius: 10px;
+    border: 0;
+    outline: 0;
 }
