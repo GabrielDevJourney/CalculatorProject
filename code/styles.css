@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.container{
+    width: 275px;
+    height: 540px;
+    border: 1px solid black;
+    margin: 10% auto;
+}
+
+.display{
+    width: 275px;
+    height: 193px;
+    border: 1px solid purple;
+}
+
+.buttons-div{
+    width: 275px;
+    height: 347px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 1px solid  red;
+    padding: 15px;
+}
