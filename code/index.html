@@ -55,6 +55,19 @@
         </div>
     </div>
     <script>
+        
+        //function to display the opetaration
+        let currentInput = '';
+
+        function appendValue(value){
+            console.log("currentInput:", currentInput);
+            currentInput += value;
+            document.getElementById('display').value = currentInput;
+        }
+
+
+
+
         function add(num1,num2){
             return num1 + num2;
         }
@@ -82,6 +95,8 @@
         let operators;
 
         function operate(operator, numb1, numb2){
+            currentInput = currentInput.toString();
+            console.log(currentInput);
             switch (operator) {
                 case '+' :
                     
@@ -104,6 +119,7 @@
                     return undefined //*for now return undefined
             }
         }
+
 
     </script>
 </body>
