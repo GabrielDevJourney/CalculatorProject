@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b454cf0edf.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -22,9 +23,9 @@
 
             <div class="gird3x5">
                 
-                <button class="buttons-50x50" onclick="clearDisplay()">AC</button>
-                <button class="buttons-50x50"  onclick="backspace()"><img src="assets/backspaceIcon.png" alt=""></button>
-                <button class="buttons-50x50" onclick="appendValue('/')">/</button>
+                <button class="buttons-50x50 cleanDelete" onclick="clearDisplay()">AC</button>
+                <button class="buttons-50x50 cleanDelete"  onclick="backspace()"><i class="icon fa-solid fa-delete-left fa-lg" style="color: #ffffff;"></i></button>
+                <button class="buttons-50x50 operator" onclick="appendValue('/')">/</button>
 
                 <button class="buttons-50x50" onclick="appendValue('7')">7</button>
                 <button class="buttons-50x50" onclick="appendValue('8')">8</button>
@@ -38,16 +39,16 @@
                 <button class="buttons-50x50" onclick="appendValue('2')">2</button>
                 <button class="buttons-50x50" onclick="appendValue('3')">3</button>
 
-                <button class="button-special-number0" onclick="appendValue('0')">0</button>
+                <button class="buttons-50x50 button-special-number0" onclick="appendValue('0')">0</button>
                 <button class="buttons-50x50" onclick="appendValue('.')">.</button>
 
             </div>
             <div class="gird1x4">
 
-                <button class="buttons-50x50" onclick="appendValue('*')">*</button>
-                <button class="buttons-50x50" onclick="appendValue('-')">-</button>
-                <button class="buttons-50x85" onclick="appendValue('+')">+</button>
-                <button class="buttons-50x85" onclick="calculate()">=</button>
+                <button class="buttons-50x50 operator" onclick="appendValue('*')">*</button>
+                <button class="buttons-50x50 operator" onclick="appendValue('-')">-</button>
+                <button class="buttons-50x85 operator" onclick="appendValue('+')">+</button>
+                <button class="buttons-50x85 operator" onclick="calculate()">=</button>
 
             </div>
 

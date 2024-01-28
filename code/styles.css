@@ -1,3 +1,10 @@
+:root{
+    --calculator-bg: #17181A;
+    --numbersColor: #303136;
+    --operatorAndEqual: #005DB2;
+    --clean-delete: #5E6061;
+    --textColor: white;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +12,8 @@
     font-family: 'JetBrains Mono', monospace;
     font-weight: bold;
     font-size: 18px;
+    border: 0;
+    color: var(--textColor);
 }
 
 body {
@@ -18,15 +27,16 @@ body {
 .container{
     width: 275px;
     height: 540px;
-    border: 1px solid black;
     margin: 10% auto;
-    border-radius: 10px;
-    
+    border-radius: 20px;
+    background-color: var(--calculator-bg);
 }
 
-.display{
+.display .screen{
     width: 275px;
     height: 193px;
+    background-color: var(--calculator-bg);
+    border-radius: 20px;
 }
 
 .buttons-div{
@@ -37,6 +47,7 @@ body {
     gap: 15px;
 }
 
+/** GIRD START AT 0 */
 .gird3x5{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -45,6 +56,7 @@ body {
     row-gap: 15px;
 }
 
+/** GIRD START AT = */
 .gird1x4{
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -52,12 +64,15 @@ body {
     row-gap: 15px;
 }
 
+/* * NORMAL BUTTONS */
 .buttons-50x50{
     width: 50px;
     height: 50px;
     border-radius: 10px;
+    background-color: var(--numbersColor);
 }
 
+/* * BIGGER BUTTONS */
 .buttons-50x85{
     width: 50px;
     height: 85px;
@@ -74,14 +89,22 @@ body {
 .screen{
     width: 273px;
     height: 193px;
-    border-radius: 10px 10px 0 0;
     border: 0;
     outline: 0;
 }
 
 /** IMAGE OF BACKSPACE STYLING */
-.buttons-50x50 img{
-    width: 25px;
-    height: 25px;
+.buttons-50x50 .icon{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
 
+/* *COLORS ASSIGNING */
+.cleanDelete{
+    background-color: var(--clean-delete);
+}
+
+.operator{
+    background-color: var(--operatorAndEqual);
 }
