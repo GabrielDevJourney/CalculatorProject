@@ -108,3 +108,11 @@ body {
 .operator{
     background-color: var(--operatorAndEqual);
 }
+
+.buttons-50x50,.buttons-50x85:hover{
+    cursor: pointer;
+}
+
+.screen:hover{
+    cursor: default;
+}
