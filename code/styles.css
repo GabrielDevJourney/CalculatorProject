@@ -26,7 +26,7 @@ body {
 
 .container{
     width: 275px;
-    height: 540px;
+    height: 520px;
     margin: 10% auto;
     border-radius: 20px;
     background-color: var(--calculator-bg);
@@ -34,14 +34,17 @@ body {
 
 .display .screen{
     width: 275px;
-    height: 193px;
+    height: 163px;
+    font-size: 30px;
     background-color: var(--calculator-bg);
     border-radius: 20px;
+    text-align: right;
+    padding: 50px 15px 0 0;
 }
 
 .buttons-div{
     width: 275px;
-    height: 347px;
+    height: 357px;
     display: flex;
     padding: 15px;
     gap: 15px;
