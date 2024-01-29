@@ -25,7 +25,7 @@
                 
                 <button class="buttons-50x50 cleanDelete" onclick="clearDisplay()">AC</button>
                 <button class="buttons-50x50 cleanDelete"  onclick="display.value = display.value.toString().slice(0,-1)"><i class="icon fa-solid fa-delete-left fa-lg" style="color: #ffffff;"></i></button>
-                <button class="buttons-50x50 operator" onclick="appendValue('/')">/</button>
+                <button class="buttons-50x50 operator" onclick="operate('/')">/</button>
 
                 <button class="buttons-50x50" onclick="appendValue('7')">7</button>
                 <button class="buttons-50x50" onclick="appendValue('8')">8</button>
@@ -45,82 +45,15 @@
             </div>
             <div class="gird1x4">
 
-                <button class="buttons-50x50 operator" onclick="appendValue('*')">*</button>
-                <button class="buttons-50x50 operator" onclick="appendValue('-')">-</button>
-                <button class="buttons-50x85 operator" onclick="appendValue('+')">+</button>
+                <button class="buttons-50x50 operator" onclick="operate('*')">*</button>
+                <button class="buttons-50x50 operator" onclick="operate('-')">-</button>
+                <button class="buttons-50x85 operator" onclick="operate('+')">+</button>
                 <button class="buttons-50x85 operator" onclick="calculate()">=</button>
 
             </div>
 
         </div>
     </div>
-    <script>
-        
-        //function to display the opetaration
-        let currentInput = '';
-
-        function appendValue(value){
-            console.log("currentInput:", currentInput);
-            currentInput += value;
-            document.getElementById('display').value = currentInput;
-        }
-
-
-
-
-        function add(num1,num2){
-            return num1 + num2;
-        }
-
-        function subtract(num1, num2){
-            return num1 - num2;
-        }
-
-        function multiply(num1, num2){
-            return num1 * num2;
-        }
-
-        function divide(num1, num2){
-
-            if (b === 0) {
-
-        console.error("Cannot divide by zero");
-        return undefined; // i will see if i return a error or something
-    }
-            return num1 / num2;
-        }
-
-        let number1;
-        let number2;
-        let operators;
-
-        function operate(operator, numb1, numb2){
-            currentInput = currentInput.toString();
-            console.log(currentInput);
-            switch (operator) {
-                case '+' :
-                    
-                    return add(numb1,numb2);
-            
-                case '-' :
-
-                    return subtract(numb1,numb2);
-            
-                case '*' :
-
-                    return multiply(numb1,numb2);
-            
-                case '/' :
-
-                    return divide(numb1,numb2);
-            
-                default:
-                    console.error('Invalid Operator');
-                    return undefined //*for now return undefined
-            }
-        }
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
