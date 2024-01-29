@@ -4,14 +4,14 @@
 let display = document.querySelector('#display');
 let currentInput = '';
 
-function appendValue(value){
-  currentInput += value;
+function appendNumber(num){
+  currentInput += num;
   display.value = currentInput;
 }
 
-function operate(operator) {
-  displayValue += operator;
-  updateDisplay();
+function appendOperator(operator) {
+  currentInput += operator;
+  display.value = currentInput;
 }
 
 function clearDisplay(){

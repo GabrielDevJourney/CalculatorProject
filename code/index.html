@@ -25,29 +25,29 @@
                 
                 <button class="buttons-50x50 cleanDelete" onclick="clearDisplay()">AC</button>
                 <button class="buttons-50x50 cleanDelete"  onclick="display.value = display.value.toString().slice(0,-1)"><i class="icon fa-solid fa-delete-left fa-lg" style="color: #ffffff;"></i></button>
-                <button class="buttons-50x50 operator" onclick="operate('/')">/</button>
+                <button class="buttons-50x50 operator" onclick="appendOperator('/')">/</button>
 
-                <button class="buttons-50x50" onclick="appendValue('7')">7</button>
-                <button class="buttons-50x50" onclick="appendValue('8')">8</button>
-                <button class="buttons-50x50" onclick="appendValue('9')">9</button>
+                <button class="buttons-50x50" onclick="appendNumber('7')">7</button>
+                <button class="buttons-50x50" onclick="appendNumber('8')">8</button>
+                <button class="buttons-50x50" onclick="appendNumber('9')">9</button>
                 
-                <button class="buttons-50x50" onclick="appendValue('4')">4</button>
-                <button class="buttons-50x50" onclick="appendValue('5')">5</button>
-                <button class="buttons-50x50" onclick="appendValue('6')">6</button>
+                <button class="buttons-50x50" onclick="appendNumber('4')">4</button>
+                <button class="buttons-50x50" onclick="appendNumber('5')">5</button>
+                <button class="buttons-50x50" onclick="appendNumber('6')">6</button>
 
-                <button class="buttons-50x50" onclick="appendValue('1')">1</button>
-                <button class="buttons-50x50" onclick="appendValue('2')">2</button>
-                <button class="buttons-50x50" onclick="appendValue('3')">3</button>
+                <button class="buttons-50x50" onclick="appendNumber('1')">1</button>
+                <button class="buttons-50x50" onclick="appendNumber('2')">2</button>
+                <button class="buttons-50x50" onclick="appendNumber('3')">3</button>
 
-                <button class="buttons-50x50 button-special-number0" onclick="appendValue('0')">0</button>
-                <button class="dot buttons-50x50" onclick="appendValue('.')">.</button>
+                <button class="buttons-50x50 button-special-number0" onclick="appendNumber('0')">0</button>
+                <button class="dot buttons-50x50" onclick="appendNumber('.')">.</button>
 
             </div>
             <div class="gird1x4">
 
-                <button class="buttons-50x50 operator" onclick="operate('*')">*</button>
-                <button class="buttons-50x50 operator" onclick="operate('-')">-</button>
-                <button class="buttons-50x85 operator" onclick="operate('+')">+</button>
+                <button class="buttons-50x50 operator" onclick="appendOperator('*')">*</button>
+                <button class="buttons-50x50 operator" onclick="appendOperator('-')">-</button>
+                <button class="buttons-50x85 operator" onclick="appendOperator('+')">+</button>
                 <button class="buttons-50x85 operator" onclick="calculate()">=</button>
 
             </div>
