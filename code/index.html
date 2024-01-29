@@ -24,7 +24,7 @@
             <div class="gird3x5">
                 
                 <button class="buttons-50x50 cleanDelete" onclick="clearDisplay()">AC</button>
-                <button class="buttons-50x50 cleanDelete"  onclick="backspace()"><i class="icon fa-solid fa-delete-left fa-lg" style="color: #ffffff;"></i></button>
+                <button class="buttons-50x50 cleanDelete"  onclick="display.value = display.value.toString().slice(0,-1)"><i class="icon fa-solid fa-delete-left fa-lg" style="color: #ffffff;"></i></button>
                 <button class="buttons-50x50 operator" onclick="appendValue('/')">/</button>
 
                 <button class="buttons-50x50" onclick="appendValue('7')">7</button>
