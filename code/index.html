@@ -8,52 +8,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b454cf0edf.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
+    <main class="main">
+        <div class="container">
 
-        <div class="display">
-
-            <input class="screen" type="text" id="display" readonly>
-
-        </div>
-
-        <div class="buttons-div">
-
-            <div class="gird3x5">
-                
-                <button class="buttons-50x50 cleanDelete" onclick="clearDisplay()">AC</button>
-                <button class="buttons-50x50 cleanDelete"  onclick="display.value = display.value.toString().slice(0,-1)"><i class="icon fa-solid fa-delete-left fa-lg" style="color: #ffffff;"></i></button>
-                <button class="buttons-50x50 operator" onclick="appendOperator('/')">/</button>
-
-                <button class="buttons-50x50" onclick="appendNumber('7')">7</button>
-                <button class="buttons-50x50" onclick="appendNumber('8')">8</button>
-                <button class="buttons-50x50" onclick="appendNumber('9')">9</button>
-                
-                <button class="buttons-50x50" onclick="appendNumber('4')">4</button>
-                <button class="buttons-50x50" onclick="appendNumber('5')">5</button>
-                <button class="buttons-50x50" onclick="appendNumber('6')">6</button>
-
-                <button class="buttons-50x50" onclick="appendNumber('1')">1</button>
-                <button class="buttons-50x50" onclick="appendNumber('2')">2</button>
-                <button class="buttons-50x50" onclick="appendNumber('3')">3</button>
-
-                <button class="buttons-50x50 button-special-number0" onclick="appendNumber('0')">0</button>
-                <button class="dot buttons-50x50" onclick="appendNumber('.')">.</button>
-
-            </div>
-            <div class="gird1x4">
-
-                <button class="buttons-50x50 operator" onclick="appendOperator('*')">*</button>
-                <button class="buttons-50x50 operator" onclick="appendOperator('-')">-</button>
-                <button class="buttons-50x85 operator" onclick="appendOperator('+')">+</button>
-                <button class="buttons-50x85 operator" onclick="calculate()">=</button>
-
+            <div class="display">
+                <div data-previous-operand class="last-operand">123</div>
+                <div data-current-operand class="current-operand">123</div>
             </div>
 
+            <div class="buttons-div">
+    
+                <div class="gird3x5">
+                    
+                    <button class="buttons-50x50 cleanDelete" data-all-clear>AC</button>
+                    <button class="buttons-50x50 cleanDelete"  data-delete><i class="icon fa-solid fa-delete-left fa-lg" style="color: #ffffff;"></i></button>
+                    <button class="buttons-50x50 operator" data-operatorion>/</button>
+    
+                    <button class="buttons-50x50" data-number>7</button>
+                    <button class="buttons-50x50" data-number>8</button>
+                    <button class="buttons-50x50" data-number>9</button>
+                    
+                    <button class="buttons-50x50" data-number>4</button>
+                    <button class="buttons-50x50" data-number>5</button>
+                    <button class="buttons-50x50" data-number>6</button>
+    
+                    <button class="buttons-50x50" data-number>1</button>
+                    <button class="buttons-50x50" data-number>2</button>
+                    <button class="buttons-50x50" data-number>3</button>
+    
+                    <button class="buttons-50x50 button-special-number0" data-number>0</button>
+                    <button class="dot buttons-50x50" data-number>.</button>
+    
+                </div>
+                <div class="gird1x4">
+    
+                    <button class="buttons-50x50 operator" data-operatorion>*</button>
+                    <button class="buttons-50x50 operator" data-operatorion>-</button>
+                    <button class="buttons-50x85 operator" data-operatorion>+</button>
+                    <button class="buttons-50x85 operator" data-equals>=</button>
+    
+                </div>
+    
+            </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    </main>
 </body>
 </html>
