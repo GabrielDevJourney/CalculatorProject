@@ -28,6 +28,11 @@ class Calculator{
   chooseOperation(operation){
     //*dont let return if there is no numbers
     if(this.currentOperand === '') return
+    //*instead of cleaning the display and showing the current we compute
+    //*and show the new value
+    if(this.previousOperand !== '') {
+      this.compute()
+    }
     this.operation = operation
     //*set the display operand to the current 
     this.previousOperand = this.currentOperand
@@ -50,7 +55,7 @@ class Calculator{
 
 
 const numberButtons = document.querySelectorAll('[data-number]')
-const operationButtons = document.querySelectorAll('[data-operatio]')
+const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButton = document.querySelector('[data-equals]')
 const deleteButton = document.querySelector("[data-delete]")
 const allClearButton = document.querySelector("[data-all-clear]")
@@ -74,3 +79,9 @@ operationButtons.forEach((button) => {
     calculator.updateDisplay();
   });
 });
+
+//*calling for compute when equal is click
+equalsButton.addEventListener('click', () => {
+  calculator.compute()
+  calculator.updateDisplay()
+})
