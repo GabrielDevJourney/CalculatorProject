@@ -28,14 +28,18 @@ class Calculator{
   chooseOperation(operation){
     //*dont let return if there is no numbers
     if(this.currentOperand === '') return
+
     //*instead of cleaning the display and showing the current we compute
     //*and show the new value
-    if(this.previousOperand !== '') {
+    if(this.previousOperand != '') {
       this.compute()
     }
+
     this.operation = operation
+
     //*set the display operand to the current 
     this.previousOperand = this.currentOperand
+    
     //*clean the current
     this.currentOperand = ''
   }
@@ -71,10 +75,18 @@ class Calculator{
     this.operation = undefined
     this.previousOperand = ''
   }
+
+
   getDisplayNumber(number){
+
+    if(!number){
+      return ''
+    }
+
     const stringNumber = number.toString()
     const integerDigits = parseFloat(stringNumber.split('.')[0])
-    const decimalDigits = stringNumber.split('.'[1])
+    const decimalDigits = stringNumber.split('.')[1]
+
     let integerDisplay
     if(isNaN(integerDigits)){
       integerDisplay = '' 
@@ -83,20 +95,22 @@ class Calculator{
         maximumFractionDigits : 0
       })
     }
-    if(decimalDigits !== null){
-      return `${integerDigits}.${decimalDigits}`
+    if(decimalDigits !== undefined){
+      return `${integerDisplay}.${decimalDigits}`
     } else {
-      return integerDigits
+      return integerDisplay
     }
   }
+
+
   //*UPDATE VALUES IN THE OUTPUT
   updateDisplay(){
     this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand)
-    if(this.operation !== undefined){
+    if(this.operation != null){
       //*display previous operand and operator in the previous screen
-      this.previousOperandTextElement.innerText = `${this.previousOperand} ${this.operation}`
+      this.previousOperandTextElement.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
     } else {
-      this.previousOperandTextElement.innerText = ''
+      previousOperandTextElement.innerText = ''
     }
   }
 }
