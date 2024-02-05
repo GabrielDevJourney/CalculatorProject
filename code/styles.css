@@ -5,6 +5,7 @@
     --clean-delete: #5E6061;
     --textColor: white;
 }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,12 +20,25 @@
 body {
     height: 100vh;
     background-color: #A0D7FF;
+    overflow: hidden;
 }
 
 .section-landingPage{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-height: 100vh;
+}
+
+.lp-header > p{
+    text-align: center;
+}
+
+span{
+    font-size: 35px;
+    color: var(--calculator-bg);
+    padding-left: 75px ;
+    display: block;
 }
 
 .container{
