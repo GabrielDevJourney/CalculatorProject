@@ -20,7 +20,7 @@
 body {
     height: 100vh;
     background-color: #A0D7FF;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .section-landingPage{
