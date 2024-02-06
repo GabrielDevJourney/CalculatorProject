@@ -26,9 +26,9 @@ body {
 .section-landingPage{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     max-height: 100vh;
-
+    padding-right: 75px;
 }
 
 .lp-header > p{
