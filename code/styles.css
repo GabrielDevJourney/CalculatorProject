@@ -15,6 +15,7 @@
     font-size: 20px;
     border: 0;
     color: var(--textColor);
+    border: 1px solid white;
 }
 
 body {
@@ -208,4 +209,47 @@ span{
 
 .fa-github:hover {
     transform: rotate(-360deg) scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+
+    *{
+        font-size: 12px;
+    }
+    .container {
+        width: 247.5px; /* Adjust width as needed */
+        max-width: 400px; /* Limit width on larger screens */
+        margin: 10% auto;
+        height: auto; /* Center the calculator on the page */
+    }
+    .display{
+        width: 90%;
+        height: auto;
+    }
+    .current-operand{
+        width: 90%;
+    }
+    .last-operand{
+        width: 90%;
+    }
+
+    .buttons-div {
+        width: 100%; /* Expand buttons to full width */
+        flex-direction: column; /* Stack buttons vertically */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 15px 0; /* Add vertical spacing between buttons */
+    }
+
+    .buttons-50x50{
+        width: 30px;
+        height: 30px;
+    }
+
+    .buttons-50x85{
+        width: 30px;
+        height: 65px;
+    }
+    .circle {
+        display: none; /* Hide the decorative ellipse on smaller screens */
+    }
 }
