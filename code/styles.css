@@ -15,7 +15,6 @@
     font-size: 20px;
     border: 0;
     color: var(--textColor);
-    border: 1px solid white;
 }
 
 body {
@@ -164,6 +163,7 @@ span{
     height: 100vh;
     margin-right: 100px;
 }
+
 /* * ELIPSE BEHIND CALCULATOR */
 .circle {
     width: 550px;
@@ -214,42 +214,73 @@ span{
 @media screen and (max-width: 768px) {
 
     *{
-        font-size: 12px;
+        font-size: 15px;
     }
+
+    .section-landingPage{
+        flex-wrap: wrap;
+        padding-top: 75px;
+    }
+
+    .calculator-circle{
+        height: auto;
+        padding-top: 35px;
+    }
+
     .container {
-        width: 247.5px; /* Adjust width as needed */
-        max-width: 400px; /* Limit width on larger screens */
+        width: 240px; 
+        max-width: 400px; 
         margin: 10% auto;
-        height: auto; /* Center the calculator on the page */
+        height: auto; 
     }
+
+    /* *CHANGE DISPLAY WIDTH AND HEIGHT */
     .display{
-        width: 90%;
+        width: 240px;
         height: auto;
     }
     .current-operand{
-        width: 90%;
+        width: 95%;
     }
     .last-operand{
-        width: 90%;
+        width: 95%;
     }
 
     .buttons-div {
         width: 100%; /* Expand buttons to full width */
-        flex-direction: column; /* Stack buttons vertically */
+        flex-direction: row;
+        gap: 5px; /* Stack buttons vertically */
         height: auto; /* Allow height to adjust based on content */
-        padding: 15px 0; /* Add vertical spacing between buttons */
+        padding: 15px 10px;
+    }
+
+    .gird1x4, .gird3x5{
+        row-gap: 8px;
+        column-gap: 8px;
+        padding: 2px;
     }
 
     .buttons-50x50{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
+        
     }
 
     .buttons-50x85{
-        width: 30px;
+        width: 40px;
         height: 65px;
     }
+    
+    .button-special-number0{
+        grid-column: span 2;
+        width: 98px;
+    }
     .circle {
-        display: none; /* Hide the decorative ellipse on smaller screens */
+        width: 420px;
+        height: 420px; /* Hide the decorative ellipse on smaller screens */
+    }
+
+    .circle-text{
+        font-size: 25px;
     }
 }
