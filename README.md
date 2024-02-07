@@ -1,1 +1,1 @@
-# :goggles: CalculatorProject
+# :brain: CalculatorProject
