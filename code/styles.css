@@ -211,6 +211,7 @@ span{
     transform: rotate(-360deg) scale(1.2);
 }
 
+/* *SCREEN RESPONSIVENESS */
 @media screen and (max-width: 768px) {
 
     *{
@@ -247,8 +248,9 @@ span{
     }
 
     .buttons-div {
+        display: flex;
+        justify-content: center;
         width: 100%; /* Expand buttons to full width */
-        flex-direction: row;
         gap: 5px; /* Stack buttons vertically */
         height: auto; /* Allow height to adjust based on content */
         padding: 15px 10px;
@@ -261,13 +263,13 @@ span{
     }
 
     .buttons-50x50{
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         
     }
 
     .buttons-50x85{
-        width: 40px;
+        width: 45px;
         height: 65px;
     }
     
