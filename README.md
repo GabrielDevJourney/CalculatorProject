@@ -9,6 +9,7 @@ This project is a "test" for the curriculum of THE ODIN PROJECT!
 - What I Learned
 - How could it be improved
 - Usage
+- Live Demo
 
 ##  Introduction
 Welcome to the Calculator Project, a simple yet powerful web-based calculator built by a newbie coder. This calculator provides basic arithmetic operations in a user-friendly interface, making it suitable for students, professionals, and anyone in need of quick calculations.
@@ -52,3 +53,6 @@ While the Calculator Project achieves its basic functionality, there are several
 ## Usage
 
 To use the calculator, simply click on the number buttons to input numbers and select an operator (+, -, *, /) using the corresponding buttons. Press the equal (=) button to calculate the result. You can clear the current input by using the "AC" button or delete the last digit with the "DEL" button.
+
+## Live Demo
+https://gabrieldevjourney.github.io
