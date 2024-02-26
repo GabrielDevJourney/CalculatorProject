@@ -55,4 +55,4 @@ While the Calculator Project achieves its basic functionality, there are several
 To use the calculator, simply click on the number buttons to input numbers and select an operator (+, -, *, /) using the corresponding buttons. Press the equal (=) button to calculate the result. You can clear the current input by using the "AC" button or delete the last digit with the "DEL" button.
 
 ## Live Demo
-https://gabrieldevjourney.github.io/CalculatorProject/
+[Live demo] (https://gabrieldevjourney.github.io/CalculatorProject/)
